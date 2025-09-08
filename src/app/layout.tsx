@@ -27,17 +27,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
       >
-        <header className="w-full bg-white shadow-md p-4 flex justify-between items-center">
+        <header className="w-full bg-blue-100 shadow-md p-4 flex justify-between items-center">
           <h1 className="text-xl text-black font-bold">PugPedia</h1>
-          <nav className="flex gap-6 text-sm font-medium">
-            <a href="/" className="hover:text-blue-600">Inicio</a>
-            <a href="/login.tsx" className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
-              Login
-            </a>
-            <a href="/login.tsx" className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
-              Signin
-            </a>
-          </nav>
         </header>
 
         <main className="flex-grow p-6">{children}</main>

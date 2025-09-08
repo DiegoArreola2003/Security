@@ -10,14 +10,6 @@ export default function Home() {
             Bienvenido a la tienda oficial orientada a la venta de productos
             especiales para perros pug. ¡Todo lo que tu pug necesita en un solo lugar!
           </p>
-          <div className="flex gap-4 justify-center md:justify-center">
-            <a
-              href="#productos"
-              className="px-6 py-3 rounded-lg bg-white text-blue-600 font-semibold hover:bg-gray-200 transition"
-            >
-              Ver productos
-            </a>
-          </div>
         </div>
 
         <div className="flex-1 flex justify-center mt-10 md:mt-0">
@@ -56,15 +48,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mt-2">
               <a 
                 href="/login" 
-                className="px-8 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
+                className="px-12 py-7 md:text-2xl me-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
               >
                 Login
               </a>
               <a 
-                href="/signup" 
-                className="px-8 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
+                href="/signin" 
+                className="px-12 py-7 md:text-2xl ms-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
               >
-                Sign Up
+                Signin
               </a>
             </div>
           </div>
