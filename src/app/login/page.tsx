@@ -1,6 +1,6 @@
 export default function LoginPage() {
   return (
-    <section className="flex min-h-screen bg-black items-center justify-center px-6">
+    <section className="flex min-h-screen items-center justify-center px-6">
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Iniciar sesión</h1>
         

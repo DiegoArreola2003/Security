@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="flex-1 flex justify-center mt-10 md:mt-0">
           <Image
-            src="/pug.png"
+            src="/img/pug.png"
             alt="Pug feliz"
             width={900}
             height={900}
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex-1 flex justify-center order-1 md:order-1">
             <Image
-              src="/pug_1.png"
+              src="/img/pug_1.png"
               alt="Pug feliz"
               width={300}
               height={300}
@@ -59,11 +59,23 @@ export default function Home() {
                 Signin
               </a>
             </div>
+            <a 
+              href="/user/cliente" 
+              className="px-12 py-7 md:text-2xl ms-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
+            >
+              Cliente
+            </a>
+            <a 
+                href="/user/cliente" 
+                className="px-12 py-7 md:text-2xl ms-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
+              >
+                Cliente
+              </a>
           </div>
 
           <div className="flex-1 flex justify-center order-2 md:order-3">
             <Image
-              src="/pug_2.png"
+              src="/img/pug_2.png"
               alt="Pug feliz"
               width={300}
               height={300}
@@ -77,7 +89,7 @@ export default function Home() {
       <section className="w-full min-h-[50vh] flex flex-col md:flex-row items-center justify-center bg-blue-500 text-white px-8">
         <div className="flex-1 flex justify-center mt-10 md:mt-0">
           <Image
-            src="/pug_3.png"
+            src="/img/pug_3.png"
             alt="Pug con correa"
             width={400}
             height={400}
