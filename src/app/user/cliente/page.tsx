@@ -22,7 +22,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -44,7 +44,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -54,7 +54,7 @@ export default function ClientePage() {
               <div className="flex flex-col items-center">
                 <Image
                     src="/img/p_3.png"
-                    alt="Pug feliz"
+                    alt=""
                     width={350}
                     height={350}
                     className="rounded-xl shadow-lg"
@@ -66,7 +66,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -88,7 +88,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -110,7 +110,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -132,7 +132,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -154,7 +154,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
@@ -176,7 +176,7 @@ export default function ClientePage() {
                 </p>
                 </div>
                 <Link
-                    href="/admin/almacen"
+                    href=""
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
                 >
                   Ver
