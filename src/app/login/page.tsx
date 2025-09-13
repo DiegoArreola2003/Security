@@ -26,7 +26,14 @@ export default function LoginPage() {
       setError(data.error);
       return;
     }
-    window.location.href = "/user/admin"; 
+    if (data.user.rol === "1") {
+      window.location.href = "/user/admin";
+    } else if (data.user.rol === "2") {
+      window.location.href = "/user/cliente";
+    } else {
+      setError("Rol desconocido");
+    }
+    
   };
 
   return (

@@ -34,7 +34,7 @@ export default function RootLayout({
         <main className="flex-grow p-6">{children}</main>
 
         <footer className="w-full bg-white border-t text-center text-sm text-gray-500 py-4">
-         {new Date().getFullYear()} Mi Sitio Web. Todos los derechos reservados.
+         {new Date().getFullYear()} PugPedia. Todos los derechos reservados.
         </footer>
       </body>
     </html>

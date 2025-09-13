@@ -59,18 +59,6 @@ export default function Home() {
                 Signin
               </a>
             </div>
-            <a 
-              href="/user/cliente" 
-              className="px-12 py-7 md:text-2xl ms-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
-            >
-              Cliente
-            </a>
-            <a 
-                href="/user/admin" 
-                className="px-12 py-7 md:text-2xl ms-6 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-800 transition duration-300"
-              >
-                Cliente
-              </a>
           </div>
 
           <div className="flex-1 flex justify-center order-2 md:order-3">
