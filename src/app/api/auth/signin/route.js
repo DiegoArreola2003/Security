@@ -29,7 +29,6 @@ export async function POST(req) {
       );
     }
 
-
     const newUser = {
       email,
       password, 
