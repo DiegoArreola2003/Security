@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import { MongoClient } from "mongodb";
+import jwt from "jsonwebtoken";
 
 const client = new MongoClient(process.env.MONGODB_URI);
-const dbName = "SeguridadDB"; 
+const dbName = "SeguridadDB";
 
 export async function POST(req) {
   try {
@@ -22,13 +23,29 @@ export async function POST(req) {
       );
     }
 
-    return NextResponse.json({
+    const token = jwt.sign(
+      { email: user.email, rol: user.rol },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+
+    const response = NextResponse.json({
       message: "Login exitoso",
       user: {
         email: user.email,
         rol: user.rol,
       },
     });
+
+    response.cookies.set("token", token, {
+      httpOnly: true,
+      secure: false, 
+      sameSite: "lax", 
+      path: "/",
+      maxAge: 60 * 60, 
+    });
+
+    return response;
   } catch (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }

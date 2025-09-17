@@ -16,11 +16,11 @@ export function middleware(req) {
   try {
     const decoded = jwt.verify(token, secret);
 
-    if (req.nextUrl.pathname.startsWith("/user/admin") && decoded.rol !== 1) {
+    if (req.nextUrl.pathname.startsWith("/user/admin") && decoded.rol !== "1") {
       return NextResponse.redirect(new URL("/login", req.url));
     }
-
-    if (req.nextUrl.pathname.startsWith("/user/cliente") && decoded.rol !== 2) {
+    
+    if (req.nextUrl.pathname.startsWith("/user/cliente") && decoded.rol !== "2") {
       return NextResponse.redirect(new URL("/login", req.url));
     }
 
