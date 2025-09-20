@@ -8,6 +8,7 @@ const dbName = "SeguridadDB";
 export async function POST(req) {
   try {
     const body = await req.json();
+    console.log("Aqui estoy")
     const { email, password } = body;
 
     await client.connect();
