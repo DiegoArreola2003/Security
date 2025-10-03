@@ -1,21 +1,19 @@
 import { NextResponse } from "next/server";
-import { MongoClient } from "mongodb";
 import jwt from "jsonwebtoken";
 
-const client = new MongoClient(process.env.MONGODB_URI);
-const dbName = "SeguridadDB";
+const users = [
+  { email: "admin@gmail.com", password: "admin123", rol: "1" }, 
+  { email: "cliente@gmail.com", password: "cliente123", rol: "2" },
+];
 
 export async function POST(req) {
   try {
     const body = await req.json();
-    console.log("Aqui estoy")
     const { email, password } = body;
 
-    await client.connect();
-    const db = client.db(dbName);
-    const users = db.collection("SeguridadClass");
-
-    const user = await users.findOne({ email, password });
+    const user = users.find(
+      (u) => u.email === email && u.password === password
+    );
 
     if (!user) {
       return NextResponse.json(
@@ -26,7 +24,7 @@ export async function POST(req) {
 
     const token = jwt.sign(
       { email: user.email, rol: user.rol },
-      process.env.JWT_SECRET,
+      process.env.JWT_SECRET || "secretito", 
       { expiresIn: "1h" }
     );
 
@@ -40,8 +38,8 @@ export async function POST(req) {
 
     response.cookies.set("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", 
-      sameSite: "strict", 
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
       path: "/",
       maxAge: 60 * 60, 
     });
